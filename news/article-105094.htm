@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://whatisvpn.github.io/news/article-105094.htm" />
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>深入解析V2Ray面板的安装、配置与使用</title>
+        <meta name="description" content="随着网络环境的不断变化，许多用户为了突破地理位置限制、提高上网速度或保护个人隐私，纷纷选择使用V2Ray作为网络代理工具。V2Ray凭借其强大的功能和灵活的配置，已经成为了一款广泛使用的代理工具。然而" />
+        <link rel="icon" href="/assets/website/img/winxraynode/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="什么是VPN 中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://whatisvpn.github.io/news/article-105094.htm" />
+    <meta property="og:site_name" content="什么是VPN 中文网" />
+    <meta property="og:title" content="深入解析V2Ray面板的安装、配置与使用" />
+    <meta property="og:image" content="https://whatisvpn.github.io/uploads/20240721/14253692951d5ff255a5d38678457182.webp" />
+        <meta property="og:release_date" content="2025-04-26T07:41:14" />
+    <meta property="og:updated_time" content="2025-04-26T07:41:14" />
+        <meta property="og:description" content="随着网络环境的不断变化，许多用户为了突破地理位置限制、提高上网速度或保护个人隐私，纷纷选择使用V2Ray作为网络代理工具。V2Ray凭借其强大的功能和灵活的配置，已经成为了一款广泛使用的代理工具。然而" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深入解析V2Ray面板的安装、配置与使用">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="/assets/website/css/winxraynode/bootstrap.min.css">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="/assets/website/css/winxraynode/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- OWL CAROUSEL -->
+    <link href="/assets/website/css/winxraynode/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/website/css/winxraynode/owl.theme.default.min.css" rel="stylesheet">
+    <!-- LIGHTBOX -->
+    <link rel=" stylesheet" href="/assets/website/css/winxraynode/lightbox.css">
+    <!--Style CSS file-->
+    <link rel=" stylesheet" href="/assets/website/css/winxraynode/style.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VWB7KJ18K9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VWB7KJ18K9');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- ====== Preloader ======  -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- ======End Preloader ======  -->
+    <!-- ======START NAVGITION ======  -->
+    <!-- Menu -->
+    <div class="main-menu">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <!-- logo -->
+                <a class="navbar-brand" href="/">
+                                <span>
+                    什么是VPN                </span>
+                                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+                    <span class="icon-bar"><i class="fa fa-bars fa-2x"></i></span>
+                </button>
+                <!--End of Resposive Toggle icon-->
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <!--Main menu navigation list-->
+                    <ul class="navbar-nav ml-auto">
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/news/">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/client.htm">客户端</a>
+                        </li>
+                                            </ul>
+                    <!--End of Main menu navigation list-->
+                </div>
+                <!--End of resposive collapse class-->
+            </nav>
+        </div>
+    </div>
+    <!-- Menu -->
+    <!-- ====== END NAVGITION ======  -->
+    <!-- =======START HEADER=========== -->
+    <header class="home category" id="home" data-scroll-index="0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 home-content mt-md-5 mt-sm-5">
+                    <h1 class="heading-primary mb-3 title">
+                        深入解析V2Ray面板的安装、配置与使用                    </h1>
+                    <p class="mb-5">
+                        <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / <span>正文</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====== END HEADER ======  -->
+    <!-- Scroll to Top -->
+    <div id="scroll-to-top"><i class="fa fa-arrow-up fa-fw"></i></div>
+    <!-- ====== START ABOUT ======  -->
+    <section class="about padding" id="about" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="24" data-end="252" class="">随着网络环境的不断变化，许多用户为了突破地理位置限制、提高上网速度或保护个人隐私，纷纷选择使用V2Ray作为网络代理工具。V2Ray凭借其强大的功能和灵活的配置，已经成为了一款广泛使用的代理工具。然而，对于许多用户来说，直接操作V2Ray的配置文件和命令行界面可能会显得过于复杂。为了解决这一问题，V2Ray面板应运而生，成为用户更便捷管理和配置V2Ray的图形界面工具。本文将详细解析V2Ray面板的使用与配置，帮助用户快速上手并高效使用这款强大的工具。</p>
+<h2 data-start="254" data-end="270" class="">一、什么是V2Ray面板？</h2>
+<p data-start="272" data-end="410" class="">V2Ray面板是一个图形用户界面（GUI）工具，专为V2Ray服务的管理和配置设计。它使得用户能够通过直观的界面来添加、删除和配置V2Ray节点，查看实时流量使用情况，修改配置文件等操作，从而简化了V2Ray的管理过程，特别适用于那些不熟悉命令行操作或希望提高工作效率的用户。</p>
+<h3 data-start="412" data-end="433" class="">1.1 V2Ray和面板的基本概念</h3>
+<ul data-start="435" data-end="627">
+<li data-start="435" data-end="527" class="">
+<p data-start="437" data-end="527" class=""><strong data-start="437" data-end="446">V2Ray</strong>：V2Ray是一款开源的网络代理工具，支持多种协议（如VMess、VLess、Shadowsocks等），并通过多种加密方式帮助用户突破网络限制，提升网络安全性。</p>
+</li>
+<li data-start="531" data-end="627" class="">
+<p data-start="533" data-end="627" class=""><strong data-start="533" data-end="544">V2Ray面板</strong>：V2Ray面板是一个图形界面工具，它简化了V2Ray的配置和管理过程，用户只需通过面板操作即可完成节点添加、流量监控、配置文件管理等操作，极大提升了用户的使用体验。</p>
+</li>
+</ul>
+<h2 data-start="629" data-end="646" class="">二、V2Ray面板的主要功能</h2>
+<p data-start="648" data-end="706" class="">V2Ray面板为用户提供了一系列便捷的功能，使得V2Ray的管理变得更加轻松和高效。以下是V2Ray面板的主要功能：</p>
+<h3 data-start="708" data-end="720" class="">2.1 节点管理</h3>
+<p data-start="722" data-end="822" class="">通过V2Ray面板，用户可以轻松地添加、编辑和删除代理节点。用户可以在面板中输入节点信息（如节点类型、地址、端口等），并通过简单的操作来切换节点，使得在复杂的网络环境中保持稳定的网络连接变得更加容易。</p>
+<h3 data-start="824" data-end="836" class="">2.2 流量监控</h3>
+<p data-start="838" data-end="949" class="">V2Ray面板能够实时监控流量使用情况，帮助用户了解网络状态。用户可以通过面板查看每个节点的流量使用情况，以及整体的网络流量统计数据。这对那些对流量有严格要求的用户非常重要，能够帮助他们避免过度使用流量或提前做好流量管理。</p>
+<h3 data-start="951" data-end="965" class="">2.3 配置文件管理</h3>
+<p data-start="967" data-end="1085" class="">V2Ray面板支持配置文件的导入和导出功能，用户可以轻松备份和恢复配置文件。这对于频繁修改配置或需要在多个设备之间共享配置的用户来说非常实用。此外，面板还支持快速编辑配置文件，用户无需直接修改命令行中的配置文件，减少了操作错误的可能性。</p>
+<h3 data-start="1087" data-end="1099" class="">2.4 用户管理</h3>
+<p data-start="1101" data-end="1195" class="">V2Ray面板支持创建和管理多个用户，适合团队或多人共享使用的环境。管理员可以通过面板对用户进行权限分配，设置不同的访问权限和配置参数，确保每个用户都能在安全和便捷的环境下使用V2Ray。</p>
+<h2 data-start="1197" data-end="1213" class="">三、如何安装V2Ray面板</h2>
+<p data-start="1215" data-end="1267" class="">要使用V2Ray面板，首先需要在Linux系统上安装和配置它。以下是V2Ray面板的安装步骤和系统要求：</p>
+<h3 data-start="1269" data-end="1281" class="">3.1 系统要求</h3>
+<ul data-start="1283" data-end="1381">
+<li data-start="1283" data-end="1332" class="">
+<p data-start="1285" data-end="1332" class=""><strong data-start="1285" data-end="1293">操作系统</strong>：V2Ray面板需要运行在Linux系统上（如Ubuntu、CentOS等）。</p>
+</li>
+<li data-start="1333" data-end="1381" class="">
+<p data-start="1335" data-end="1381" class=""><strong data-start="1335" data-end="1343">依赖软件</strong>：V2Ray面板依赖Docker和Git等工具，确保这些依赖软件已正确安装。</p>
+</li>
+</ul>
+<h3 data-start="1383" data-end="1395" class="">3.2 安装步骤</h3>
+<h4 data-start="1397" data-end="1409" class="">1. 更新系统</h4>
+<p data-start="1411" data-end="1448" class="">在安装V2Ray面板之前，首先需要确保系统是最新的。使用以下命令更新系统：</p>
+<pre class="overflow-visible!" data-start="1450" data-end="1497"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>sudo apt update &amp;&amp; sudo apt upgrade
+</span></span></code></div></div></pre>
+<h4 data-start="1499" data-end="1515" class="">2. 安装Docker</h4>
+<p data-start="1517" data-end="1572" class="">V2Ray面板需要使用Docker容器来运行，因此首先需要安装Docker。可以使用以下命令安装Docker：</p>
+<pre class="overflow-visible!" data-start="1574" data-end="1653"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+</span></span></code></div></div></pre>
+<h4 data-start="1655" data-end="1672" class="">3. 下载V2Ray面板</h4>
+<p data-start="1674" data-end="1696" class="">接下来，使用Git下载V2Ray面板的代码：</p>
+<pre class="overflow-visible!" data-start="1698" data-end="1779"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>git </span><span><span class="hljs-built_in">clone</span></span><span> https://github.com/your-repo/v2ray-panel.git
+</span><span><span class="hljs-built_in">cd</span></span><span> v2ray-panel
+</span></span></code></div></div></pre>
+<h4 data-start="1781" data-end="1793" class="">4. 启动面板</h4>
+<p data-start="1795" data-end="1817" class="">完成下载后，通过以下命令启动V2Ray面板：</p>
+<pre class="overflow-visible!" data-start="1819" data-end="1851"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>docker-compose up -d
+</span></span></code></div></div></pre>
+<p data-start="1853" data-end="1906" class="">该命令会在后台启动V2Ray面板，您可以通过浏览器访问面板的Web界面，默认情况下，面板会运行在80端口。</p>
+<h2 data-start="1908" data-end="1925" class="">四、V2Ray面板的基本配置</h2>
+<p data-start="1927" data-end="1988" class="">在安装完V2Ray面板后，接下来需要对其进行配置，以确保能够正确地运行和提供代理服务。以下是V2Ray面板的基本配置方法：</p>
+<h3 data-start="1990" data-end="2004" class="">4.1 配置文件路径</h3>
+<p data-start="2006" data-end="2072" class="">V2Ray面板的配置文件通常位于<code data-start="2022" data-end="2046">/etc/v2ray/config.json</code>。在这个文件中，您可以定义代理节点、加密方式等信息。</p>
+<h3 data-start="2074" data-end="2086" class="">4.2 节点配置</h3>
+<p data-start="2088" data-end="2183" class="">在配置文件中，用户需要为V2Ray添加代理节点。常见的节点配置项包括节点类型、地址、端口、加密方式、UUID等。通过V2Ray面板，用户可以直接在界面中进行节点配置，而无需手动修改配置文件。</p>
+<h3 data-start="2185" data-end="2197" class="">4.3 高级配置</h3>
+<p data-start="2199" data-end="2278" class="">对于更高级的用户，V2Ray面板还提供了流量控制和安全设置等功能。用户可以根据需求配置流量限制、优先级、TLS加密等选项，进一步提高代理服务的安全性和稳定性。</p>
+<h2 data-start="2280" data-end="2296" class="">五、常见问题解答（FAQ）</h2>
+<h3 data-start="2298" data-end="2318" class="">5.1 V2Ray面板如何使用？</h3>
+<p data-start="2320" data-end="2378" class="">V2Ray面板的使用非常简单，用户只需登录面板，选择所需功能，如添加节点、查看流量等，按照面板上的提示进行操作即可。</p>
+<h3 data-start="2380" data-end="2402" class="">5.2 V2Ray面板支持哪些协议？</h3>
+<p data-start="2404" data-end="2465" class="">V2Ray面板支持多种协议，包括VMess、VLess、Shadowsocks等，用户可以根据需要选择合适的协议进行配置。</p>
+<h3 data-start="2467" data-end="2494" class="">5.3 如何解决V2Ray面板无法连接的问题？</h3>
+<p data-start="2496" data-end="2524" class="">如果V2Ray面板无法连接，您可以按照以下步骤进行排查：</p>
+<ul data-start="2526" data-end="2582">
+<li data-start="2526" data-end="2539" class="">
+<p data-start="2528" data-end="2539" class="">检查网络连接是否正常。</p>
+</li>
+<li data-start="2540" data-end="2559" class="">
+<p data-start="2542" data-end="2559" class="">确认V2Ray服务是否已正常启动。</p>
+</li>
+<li data-start="2560" data-end="2582" class="">
+<p data-start="2562" data-end="2582" class="">查看配置文件是否正确，确保节点配置无误。</p>
+</li>
+</ul>
+<h3 data-start="2584" data-end="2606" class="">5.4 V2Ray面板的安全性如何？</h3>
+<p data-start="2608" data-end="2689" class="">V2Ray面板提供了多种安全设置选项，包括TLS加密和用户认证等，确保数据传输的安全性。此外，用户还可以通过面板设置强密码、限制访问IP等方式，进一步提升安全性。</p>
+<h2 data-start="2691" data-end="2698" class="">六、总结</h2>
+<p data-start="2700" data-end="2874" class="">V2Ray面板是一款强大的工具，可以帮助用户更加方便地管理和配置V2Ray。通过图形界面，用户可以轻松完成节点管理、流量监控、配置文件管理等操作，大大提升了使用V2Ray的效率和便利性。无论是个人用户还是团队用户，V2Ray面板都能够提供稳定、安全、高效的网络代理服务。希望本文能帮助您更好地理解和使用V2Ray面板，享受更加自由、安全的网络体验。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-104157.htm">深入了解Shadowrocket：功能、使用方法与配置教程</a></p>
+                                        <p>下一个：<a href="/news/article-105095.htm">路由器科学上网完整指南：如何通过路由器实现全家畅游自由网络</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-103476.htm" title="2017年iOS科学上网的终极指南">2017年iOS科学上网的终极指南</a></li>
+                        <li class="py-2"><a href="/news/article-99677.htm" title="v2ray是否会泄露访问记录？深度解析与安全指南">v2ray是否会泄露访问记录？深度解析与安全指南</a></li>
+                        <li class="py-2"><a href="/news/article-93753.htm" title="打开网络新世界：360路由器科学上网全攻略">打开网络新世界：360路由器科学上网全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-101807.htm" title="Clash软件全景解析：是否靠谱？从原理到实战的深度使用指南">Clash软件全景解析：是否靠谱？从原理到实战的深度使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-102642.htm" title="从入门到精通：百度V2Ray使用指南与高级配置全解析">从入门到精通：百度V2Ray使用指南与高级配置全解析</a></li>
+                        <li class="py-2"><a href="/news/article-95278.htm" title="V2Ray账号使用全指南：获取、配置与隐私保护的最佳实践（2023年8月版）">V2Ray账号使用全指南：获取、配置与隐私保护的最佳实践（2023年8月版）</a></li>
+                        <li class="py-2"><a href="/news/article-92292.htm" title="Clash 运行缓慢？全方位解析原因与优化方案">Clash 运行缓慢？全方位解析原因与优化方案</a></li>
+                        <li class="py-2"><a href="/news/article-100452.htm" title="打开自由网络之门：腾讯云科学上网全攻略（配置教程+使用指南详解）">打开自由网络之门：腾讯云科学上网全攻略（配置教程+使用指南详解）</a></li>
+                        <li class="py-2"><a href="/news/article-97398.htm" title="V2Ray使用指南：解决无法打开某些网站的问题">V2Ray使用指南：解决无法打开某些网站的问题</a></li>
+                        <li class="py-2"><a href="/news/article-91196.htm" title="全面解析V2RayN的VMess链接URL使用方法：从安装到配置全解析">全面解析V2RayN的VMess链接URL使用方法：从安装到配置全解析</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">46</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== END ABOUT======  -->
+        <!-- ====== START FOOTER BOTTOM======  -->
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-3 col-md-6 offset-md-3">
+                    <!-- START RIGHTS -->
+                    <div class="copyright">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p>什么是VPN 中文网 版权所有</p>
+                        <p>Powered by WordPress</p>
+                    </div>
+                    <!-- END RIGHTS -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== END FOOTER BOTTOM======  -->
+    <!-- ====== JS ======  -->
+    <!--jquery-3.3.1 js-->
+    <script src="/assets/website/js/frontend/winxraynode/jquery-3.3.1.min.js"></script>
+    <!-- popper js -->
+    <script src="/assets/website/js/frontend/winxraynode/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="/assets/website/js/frontend/winxraynode/bootstrap.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="/assets/website/js/frontend/winxraynode/scrollIt.min.js"></script>
+    <!-- countTo js -->
+    <script src="/assets/website/js/frontend/winxraynode/jquery.countTo.js"></script>
+    <!-- filter js -->
+    <script src="/assets/website/js/frontend/winxraynode/jquery.filterizr.min.js"></script>
+    <!-- waypoints js -->
+    <script src="/assets/website/js/frontend/winxraynode/waypoints.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="/assets/website/js/frontend/winxraynode/owl.carousel.min.js"></script>
+    <!-- validator js -->
+    <script src="/assets/website/js/frontend/winxraynode/validator.js"></script>
+    <!-- coustom js -->
+    <script src="/assets/website/js/frontend/winxraynode/main.js"></script>
+    <!-- lightbox js -->
+    <script src="/assets/website/js/frontend/winxraynode/lightbox.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>

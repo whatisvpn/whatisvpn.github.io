@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://whatisvpn.github.io/news/article-104157.htm" />
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>深入了解Shadowrocket：功能、使用方法与配置教程</title>
+        <meta name="description" content="在如今这个信息化时代，越来越多的用户依赖代理工具来提高网络的访问速度、保证在线隐私安全，以及突破地理限制。Shadowrocket是一款强大的iOS平台网络代理工具，通过它，用户可以实现科学上网、网络" />
+        <link rel="icon" href="/assets/website/img/winxraynode/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="什么是VPN 中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://whatisvpn.github.io/news/article-104157.htm" />
+    <meta property="og:site_name" content="什么是VPN 中文网" />
+    <meta property="og:title" content="深入了解Shadowrocket：功能、使用方法与配置教程" />
+    <meta property="og:image" content="https://whatisvpn.github.io/uploads/20240721/1004b3126ed83a0572c6a4aa70e3f9a8.webp" />
+        <meta property="og:release_date" content="2025-04-25T07:09:46" />
+    <meta property="og:updated_time" content="2025-04-25T07:09:46" />
+        <meta property="og:description" content="在如今这个信息化时代，越来越多的用户依赖代理工具来提高网络的访问速度、保证在线隐私安全，以及突破地理限制。Shadowrocket是一款强大的iOS平台网络代理工具，通过它，用户可以实现科学上网、网络" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深入了解Shadowrocket：功能、使用方法与配置教程">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="/assets/website/css/winxraynode/bootstrap.min.css">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="/assets/website/css/winxraynode/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- OWL CAROUSEL -->
+    <link href="/assets/website/css/winxraynode/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/website/css/winxraynode/owl.theme.default.min.css" rel="stylesheet">
+    <!-- LIGHTBOX -->
+    <link rel=" stylesheet" href="/assets/website/css/winxraynode/lightbox.css">
+    <!--Style CSS file-->
+    <link rel=" stylesheet" href="/assets/website/css/winxraynode/style.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VWB7KJ18K9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VWB7KJ18K9');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- ====== Preloader ======  -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- ======End Preloader ======  -->
+    <!-- ======START NAVGITION ======  -->
+    <!-- Menu -->
+    <div class="main-menu">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <!-- logo -->
+                <a class="navbar-brand" href="/">
+                                <span>
+                    什么是VPN                </span>
+                                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+                    <span class="icon-bar"><i class="fa fa-bars fa-2x"></i></span>
+                </button>
+                <!--End of Resposive Toggle icon-->
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <!--Main menu navigation list-->
+                    <ul class="navbar-nav ml-auto">
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/news/">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/client.htm">客户端</a>
+                        </li>
+                                            </ul>
+                    <!--End of Main menu navigation list-->
+                </div>
+                <!--End of resposive collapse class-->
+            </nav>
+        </div>
+    </div>
+    <!-- Menu -->
+    <!-- ====== END NAVGITION ======  -->
+    <!-- =======START HEADER=========== -->
+    <header class="home category" id="home" data-scroll-index="0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 home-content mt-md-5 mt-sm-5">
+                    <h1 class="heading-primary mb-3 title">
+                        深入了解Shadowrocket：功能、使用方法与配置教程                    </h1>
+                    <p class="mb-5">
+                        <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / <span>正文</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====== END HEADER ======  -->
+    <!-- Scroll to Top -->
+    <div id="scroll-to-top"><i class="fa fa-arrow-up fa-fw"></i></div>
+    <!-- ====== START ABOUT ======  -->
+    <section class="about padding" id="about" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="33" data-end="212" class="">在如今这个信息化时代，越来越多的用户依赖代理工具来提高网络的访问速度、保证在线隐私安全，以及突破地理限制。Shadowrocket是一款强大的iOS平台网络代理工具，通过它，用户可以实现科学上网、网络加速，并保护个人隐私。本文将全面解析Shadowrocket，包括其主要功能、使用方法、安装过程以及详细的配置教程，帮助您高效使用这款工具，提升您的网络体验。</p>
+<h2 data-start="214" data-end="233" class="">什么是Shadowrocket？</h2>
+<p data-start="235" data-end="401" class="">Shadowrocket是一款专为iOS设备开发的网络代理工具，支持Shadowsocks、HTTP、HTTPS等多种协议。它主要用于帮助用户突破地理限制、加速网络连接、提高隐私保护，是在全球范围内都非常受欢迎的科学上网工具之一。凭借其强大的功能和灵活的配置方式，Shadowrocket可以为用户提供更安全、快速、稳定的网络体验。</p>
+<h3 data-start="403" data-end="424" class="">Shadowrocket的主要功能</h3>
+<ol data-start="426" data-end="820">
+<li data-start="426" data-end="516" class="" style="">
+<p data-start="429" data-end="516" class=""><strong data-start="429" data-end="437">代理管理</strong><br data-start="437" data-end="440">
+Shadowrocket支持多种代理协议，如Shadowsocks、HTTP、HTTPS等。用户可以根据需求选择不同的协议，以满足不同的上网需求。</p>
+</li>
+<li data-start="521" data-end="588" class="" style="">
+<p data-start="524" data-end="588" class=""><strong data-start="524" data-end="532">位置伪装</strong><br data-start="532" data-end="535">
+通过‘伪装’功能，用户可以选择不同的国家和地区进行网络访问，轻松绕过地域限制，访问全球的网站和服务。</p>
+</li>
+<li data-start="590" data-end="682" class="" style="">
+<p data-start="593" data-end="682" class=""><strong data-start="593" data-end="601">分流设置</strong><br data-start="601" data-end="604">
+Shadowrocket允许用户精细控制流量走向。您可以选择将部分流量通过代理节点，而其他流量直接连接。这对于节省带宽以及提高网络连接的效率非常有用。</p>
+</li>
+<li data-start="684" data-end="769" class="" style="">
+<p data-start="687" data-end="769" class=""><strong data-start="687" data-end="695">规则系统</strong><br data-start="695" data-end="698">
+Shadowrocket内置多种常用的代理规则，用户可以根据需求进行自定义规则配置。这使得网络流量管理更加高效，避免了不必要的流量消耗。</p>
+</li>
+<li data-start="771" data-end="820" class="" style="">
+<p data-start="774" data-end="820" class=""><strong data-start="774" data-end="782">日志记录</strong><br data-start="782" data-end="785">
+用户可以查看代理连接的详细日志，以便诊断连接问题或优化网络配置。</p>
+</li>
+</ol>
+<h3 data-start="822" data-end="830" class="">适用人群</h3>
+<p data-start="832" data-end="859" class="">Shadowrocket的功能使其适用于以下几类用户：</p>
+<ul data-start="860" data-end="1031">
+<li data-start="860" data-end="917" class="" style="">
+<p data-start="862" data-end="917" class=""><strong data-start="862" data-end="873">经常出国的用户</strong>：可以通过Shadowrocket轻松访问海外网站和服务，避免在外地遇到无法访问的情况。</p>
+</li>
+<li data-start="918" data-end="978" class="" style="">
+<p data-start="920" data-end="978" class=""><strong data-start="920" data-end="933">需要保护隐私的用户</strong>：通过VPN和加密技术，Shadowrocket能够有效保护用户的上网隐私，防止数据泄露。</p>
+</li>
+<li data-start="979" data-end="1031" class="" style="">
+<p data-start="981" data-end="1031" class=""><strong data-start="981" data-end="996">对网络速度有需求的用户</strong>：通过网络加速，提升网络的稳定性和速度，减少延迟，优化用户的上网体验。</p>
+</li>
+</ul>
+<h2 data-start="1033" data-end="1055" class="">如何下载安装Shadowrocket？</h2>
+<p data-start="1057" data-end="1130" class="">由于Shadowrocket并未在App Store上架，因此用户需要通过TestFlight这一途径进行下载和安装。以下是下载和安装的具体步骤：</p>
+<h3 data-start="1132" data-end="1153" class="">1. 获取TestFlight链接</h3>
+<p data-start="1155" data-end="1279" class="">由于Shadowrocket无法直接从App Store下载安装，您需要通过网络上的相关论坛、社区或群组，获取TestFlight的下载链接。TestFlight是一个由Apple官方提供的应用测试平台，允许用户安装未上架App Store的应用。</p>
+<h3 data-start="1281" data-end="1300" class="">2. 安装TestFlight</h3>
+<p data-start="1302" data-end="1359" class="">首先，您需要在iOS设备上安装TestFlight应用。可以通过App Store搜索并安装TestFlight。</p>
+<h3 data-start="1361" data-end="1382" class="">3. 添加Shadowrocket</h3>
+<p data-start="1384" data-end="1463" class="">在TestFlight安装完成后，打开TestFlight应用，并输入您获取到的Shadowrocket测试链接。按照提示完成Shadowrocket的安装。</p>
+<h3 data-start="1465" data-end="1476" class="">4. 完成安装</h3>
+<p data-start="1478" data-end="1523" class="">安装完成后，您可以在设备上找到Shadowrocket应用，点击打开，即可开始配置和使用。</p>
+<h3 data-start="1525" data-end="1535" class="">安装注意事项</h3>
+<ul data-start="1537" data-end="1605">
+<li data-start="1537" data-end="1574" class="" style="">
+<p data-start="1539" data-end="1574" class="">确保您的设备为iOS系统，并且版本符合Shadowrocket的要求。</p>
+</li>
+<li data-start="1575" data-end="1605" class="" style="">
+<p data-start="1577" data-end="1605" class="">下载过程中确保网络连接畅通，以保证下载和安装的顺利进行。</p>
+</li>
+</ul>
+<h2 data-start="1607" data-end="1627" class="">Shadowrocket的配置教程</h2>
+<p data-start="1629" data-end="1679" class="">在成功安装Shadowrocket后，用户需要进行一些必要的配置才能开始使用。以下是详细的配置步骤：</p>
+<h3 data-start="1681" data-end="1694" class="">1. 配置代理节点</h3>
+<p data-start="1696" data-end="1757" class="">配置代理节点是使用Shadowrocket的第一步。用户需要根据提供的节点信息，填写服务器地址、端口号、密码和加密方式等。</p>
+<h4 data-start="1759" data-end="1768" class="">添加节点</h4>
+<ul data-start="1769" data-end="1864">
+<li data-start="1769" data-end="1804" class="" style="">
+<p data-start="1771" data-end="1804" class="">打开Shadowrocket，进入“配置”选项，点击“添加节点”。</p>
+</li>
+<li data-start="1805" data-end="1864" class="" style="">
+<p data-start="1807" data-end="1864" class="">填写节点信息：包括服务器地址、端口号、UUID（用户标识符）、加密方式等。根据不同的代理协议，这些信息会有所不同。</p>
+</li>
+</ul>
+<h4 data-start="1866" data-end="1875" class="">保存设置</h4>
+<ul data-start="1876" data-end="1911">
+<li data-start="1876" data-end="1911" class="" style="">
+<p data-start="1878" data-end="1911" class="">完成节点信息的填写后，点击“保存”按钮，将配置保存并返回到主界面。</p>
+</li>
+</ul>
+<h3 data-start="1913" data-end="1924" class="">2. 设置规则</h3>
+<p data-start="1926" data-end="2000" class="">Shadowrocket提供了强大的规则设置功能，允许用户根据需求精细控制哪些流量通过代理，哪些不通过。这一功能对于节省带宽和优化网络连接非常重要。</p>
+<h4 data-start="2002" data-end="2013" class="">使用内置规则</h4>
+<ul data-start="2014" data-end="2052">
+<li data-start="2014" data-end="2052" class="" style="">
+<p data-start="2016" data-end="2052" class="">Shadowrocket内置了多种常用的代理规则，用户可以直接选择使用。</p>
+</li>
+</ul>
+<h4 data-start="2054" data-end="2064" class="">自定义规则</h4>
+<ul data-start="2065" data-end="2112">
+<li data-start="2065" data-end="2112" class="" style="">
+<p data-start="2067" data-end="2112" class="">用户可以根据个人需求，创建和修改规则。自定义规则可以帮助用户更好地管理流量，避免浪费带宽。</p>
+</li>
+</ul>
+<h3 data-start="2114" data-end="2125" class="">3. 启用代理</h3>
+<p data-start="2127" data-end="2193" class="">在完成配置之后，用户需要启用代理。通过在主界面上的开关按钮，打开代理功能。此时，您可以在下方显示的网络连接状态中查看当前的连接情况。</p>
+<h4 data-start="2195" data-end="2206" class="">查看连接状态</h4>
+<ul data-start="2207" data-end="2247">
+<li data-start="2207" data-end="2247" class="" style="">
+<p data-start="2209" data-end="2247" class="">如果连接成功，状态栏会显示已连接状态。您可以根据需要调整代理节点或切换规则。</p>
+</li>
+</ul>
+<h2 data-start="2249" data-end="2263" class="">常见问题解答（FAQ）</h2>
+<h3 data-start="2265" data-end="2289" class="">1. Shadowrocket能做什么？</h3>
+<p data-start="2291" data-end="2364" class="">Shadowrocket主要用于科学上网、网络加速以及隐私保护。通过配置代理节点，用户可以快速访问被屏蔽的网站和服务，绕过地域限制，保证上网安全。</p>
+<h3 data-start="2366" data-end="2394" class="">2. 如何保障Shadowrocket的安全性？</h3>
+<p data-start="2396" data-end="2410" class="">为了确保使用安全，用户应该：</p>
+<ul data-start="2411" data-end="2491">
+<li data-start="2411" data-end="2449" class="" style="">
+<p data-start="2413" data-end="2449" class=""><strong data-start="2413" data-end="2427">选择可靠的节点提供者</strong>：使用信誉好的节点提供商，确保节点安全稳定。</p>
+</li>
+<li data-start="2450" data-end="2491" class="" style="">
+<p data-start="2452" data-end="2491" class=""><strong data-start="2452" data-end="2460">定期更新</strong>：定期检查Shadowrocket的更新版本，以防止安全漏洞。</p>
+</li>
+</ul>
+<h3 data-start="2493" data-end="2522" class="">3. 如果Shadowrocket无法连接怎么办？</h3>
+<p data-start="2524" data-end="2546" class="">如果出现连接问题，用户可以尝试以下解决方法：</p>
+<ul data-start="2547" data-end="2595">
+<li data-start="2547" data-end="2560" class="" style="">
+<p data-start="2549" data-end="2560" class="">检查网络连接是否正常。</p>
+</li>
+<li data-start="2561" data-end="2579" class="" style="">
+<p data-start="2563" data-end="2579" class="">重新输入代理节点信息，确保无误。</p>
+</li>
+<li data-start="2580" data-end="2595" class="" style="">
+<p data-start="2582" data-end="2595" class="">尝试更换其他节点进行连接。</p>
+</li>
+</ul>
+<h3 data-start="2597" data-end="2620" class="">4. Shadowrocket收费吗？</h3>
+<p data-start="2622" data-end="2679" class="">虽然Shadowrocket本身的下载是免费的，但用户需要购买VPN节点服务，具体费用取决于节点提供商的收费政策。</p>
+<h3 data-start="2681" data-end="2700" class="">5. 使用时遇到问题如何解决？</h3>
+<p data-start="2702" data-end="2755" class="">遇到问题时，用户可以参考Shadowrocket的官方文档，或者在网络社区发帖询问，也可以寻求他人的帮助。</p>
+<h2 data-start="2757" data-end="2762" class="">总结</h2>
+<p data-start="2764" data-end="2978" class="">Shadowrocket是一款功能强大的iOS平台代理工具，凭借其灵活的配置方式和强大的代理管理功能，已经成为全球用户进行科学上网和提高网络速度的首选工具。本文详细介绍了Shadowrocket的主要功能、安装过程以及配置方法，希望能够帮助您顺利使用这款工具，提升您的网络体验。无论您是出国旅行的用户，还是需要保护上网隐私的网络安全爱好者，Shadowrocket都能够满足您的需求，为您提供更快、更安全、更稳定的网络访问体验。</p>
+<hr data-start="2980" data-end="2983" class="">
+<p data-start="2985" data-end="3120" class="">通过上述内容，我们可以看到，Shadowrocket不仅为用户提供了高效的代理管理，还具备了自定义规则和加密功能，为网络安全和隐私保护提供了保障。在操作上，Shadowrocket也非常简便，适合各种技术水平的用户，尤其是在iOS设备上，它为用户带来了更多的自由和便利。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-104152.htm">如何选择和使用Clash网名：全面指南</a></p>
+                                        <p>下一个：<a href="/news/article-105094.htm">深入解析V2Ray面板的安装、配置与使用</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-101038.htm" title="【零流量不是零问题】深入解析Clash流量使用为0的成因与全方位解决方案">【零流量不是零问题】深入解析Clash流量使用为0的成因与全方位解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-103474.htm" title="探索数字自由的利器：Rockspeed科学上网终极指南">探索数字自由的利器：Rockspeed科学上网终极指南</a></li>
+                        <li class="py-2"><a href="/news/article-96764.htm" title="威锋网：全面解析科学上网工具的使用与常见问题解答">威锋网：全面解析科学上网工具的使用与常见问题解答</a></li>
+                        <li class="py-2"><a href="/news/article-102642.htm" title="从入门到精通：百度V2Ray使用指南与高级配置全解析">从入门到精通：百度V2Ray使用指南与高级配置全解析</a></li>
+                        <li class="py-2"><a href="/news/article-98239.htm" title="全面解析模拟器Clash：从安装到配置的详细教程">全面解析模拟器Clash：从安装到配置的详细教程</a></li>
+                        <li class="py-2"><a href="/news/article-104157.htm" title="深入了解Shadowrocket：功能、使用方法与配置教程">深入了解Shadowrocket：功能、使用方法与配置教程</a></li>
+                        <li class="py-2"><a href="/news/article-102640.htm" title="Clash要买吗？全面剖析与购买建议">Clash要买吗？全面剖析与购买建议</a></li>
+                        <li class="py-2"><a href="/news/article-101807.htm" title="Clash软件全景解析：是否靠谱？从原理到实战的深度使用指南">Clash软件全景解析：是否靠谱？从原理到实战的深度使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-92292.htm" title="Clash 运行缓慢？全方位解析原因与优化方案">Clash 运行缓慢？全方位解析原因与优化方案</a></li>
+                        <li class="py-2"><a href="/news/article-97398.htm" title="V2Ray使用指南：解决无法打开某些网站的问题">V2Ray使用指南：解决无法打开某些网站的问题</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">46</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== END ABOUT======  -->
+        <!-- ====== START FOOTER BOTTOM======  -->
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-3 col-md-6 offset-md-3">
+                    <!-- START RIGHTS -->
+                    <div class="copyright">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p>什么是VPN 中文网 版权所有</p>
+                        <p>Powered by WordPress</p>
+                    </div>
+                    <!-- END RIGHTS -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== END FOOTER BOTTOM======  -->
+    <!-- ====== JS ======  -->
+    <!--jquery-3.3.1 js-->
+    <script src="/assets/website/js/frontend/winxraynode/jquery-3.3.1.min.js"></script>
+    <!-- popper js -->
+    <script src="/assets/website/js/frontend/winxraynode/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="/assets/website/js/frontend/winxraynode/bootstrap.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="/assets/website/js/frontend/winxraynode/scrollIt.min.js"></script>
+    <!-- countTo js -->
+    <script src="/assets/website/js/frontend/winxraynode/jquery.countTo.js"></script>
+    <!-- filter js -->
+    <script src="/assets/website/js/frontend/winxraynode/jquery.filterizr.min.js"></script>
+    <!-- waypoints js -->
+    <script src="/assets/website/js/frontend/winxraynode/waypoints.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="/assets/website/js/frontend/winxraynode/owl.carousel.min.js"></script>
+    <!-- validator js -->
+    <script src="/assets/website/js/frontend/winxraynode/validator.js"></script>
+    <!-- coustom js -->
+    <script src="/assets/website/js/frontend/winxraynode/main.js"></script>
+    <!-- lightbox js -->
+    <script src="/assets/website/js/frontend/winxraynode/lightbox.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
